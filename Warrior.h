@@ -14,9 +14,9 @@ public:
 //elfs
 class StrongElf : public Warrior {
 public:
-	StrongElf() {
+	StrongElf(Weapon* wep) {
 		name = "Strong elf";
-		weapon = new ElfSword();
+		weapon = wep;
 	}
 
 	void makeSound() override {
@@ -26,9 +26,9 @@ public:
 
 class SmartElf : public Warrior {
 public:
-	SmartElf() {
+	SmartElf(Weapon* wep) {
 		name = "Smart elf";
-		weapon = new ElfBow();
+		weapon = wep;
 	}
 
 	void makeSound() override {
@@ -38,9 +38,9 @@ public:
 
 class KindElf : public Warrior {
 public:
-	KindElf() {
+	KindElf(Weapon* wep) {
 		name = "Kind elf";
-		weapon = new ElfDagger();
+		weapon = wep;
 	}
 
 	void makeSound() override {
@@ -52,9 +52,9 @@ public:
 //humans
 class StrongHuman : public Warrior {
 public:
-	StrongHuman() {
+	StrongHuman(Weapon* wep) {
 		name = "Strong human";
-		weapon = new HumanSword();
+		weapon = wep;
 	}
 
 	void makeSound() override {
@@ -64,9 +64,9 @@ public:
 
 class SmartHuman : public Warrior {
 public:
-	SmartHuman() {
+	SmartHuman(Weapon* wep) {
 		name = "Smart human";
-		weapon = new HumanBow();
+		weapon = wep;
 	}
 
 	void makeSound() override {
@@ -76,9 +76,9 @@ public:
 
 class KindHuman : public Warrior {
 public:
-	KindHuman() {
+	KindHuman(Weapon* wep) {
 		name = "Kind human";
-		weapon = new HumanDagger();
+		weapon = wep;
 	}
 
 	void makeSound() override {
